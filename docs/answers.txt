@@ -1,1 +1,59 @@
+1. abbie@myhome MINGW64 ~/assignment2 (master)
+	$ mkdir -p docs
 
+	abbie@myhome MINGW64 ~/assignment2 (master)
+	$ echo "" > docs/answers.txt
+
+	abbie@myhome MINGW64 ~/assignment2 (master)
+	$ git add docs/answers.txt
+	warning: in the working copy of 'docs/answers.txt', LF will be replaced by CRLF the next time Git touches it
+
+	abbie@myhome MINGW64 ~/assignment2 (master)
+	$ git commit -m "Add empty answers.txt file"
+	[master 402e710] Add empty answers.txt file
+ 	  1 file changed, 1 insertion(+)
+ 	  create mode 100644 docs/answers.txt
+
+	abbie@myhome MINGW64 ~/assignment2 (master)
+	$ git push
+	Enumerating objects: 5, done.
+	Counting objects: 100% (5/5), done.
+	Delta compression using up to 20 threads
+	Compressing objects: 100% (2/2), done.
+	Writing objects: 100% (4/4), 330 bytes | 330.00 KiB/s, done.
+	Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+	remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+	To https://github.com/akg-create/assignment2.git
+   		86ad3a3..402e710  master -> master
+
+2. abbie@myhome MINGW64 ~/assignment2 (master)
+	$ git rev-list --count HEAD
+	8
+3. abbie@myhome MINGW64 ~/assignment2 (master)
+	$ git log -1 -- README.md
+	commit 86ad3a33b5e6f1bb329c7b6cd2939eb24a7983d6
+	Author: Abbie Grooms <abbie.grooms@live.com>
+	Date:   Tue Oct 21 18:55:20 2025 -0400
+
+    		Add author information to README.md
+
+4. - To work on new features without affecting the main code. 
+   - To isolate bug fixes or experiments.
+
+5. - git log: shows the commit history of the repository
+   - git status: shows the current changes in working directory and staging area
+
+6. git log --oneline --follow -- Vehicle.h
+
+7. git log --grep="file"
+
+8. - Inheritance: allows a class to derive from another class and resuse its code.
+   - Polymorphism: allows one interface to represent different underlying forms (methods/objects)
+   - Encapsulation: hides internal data and exposes only necessary methods for access
+
+9. - Dictator: merges changes in lieutenant repositories and solves arising conflicts
+   - Lieutenant: merges changes for some developers and solves conflicts
+   - Integration Manager: contributors fork, then a central integrator merges changes
+
+10. - Scales better by dividing authority among lieutenants
+    - Reduces merge conflicts and keeps workflow organized
