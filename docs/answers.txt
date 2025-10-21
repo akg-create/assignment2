@@ -1,5 +1,6 @@
 Date for Git Lab Tutorials: October 21, 2025
 Date for Github Accound: January 10, 2025
+Link to Github Repository: https://github.com/akg-create/assignment2.git
 
 1. abbie@myhome MINGW64 ~/assignment2 (master)
 	$ mkdir -p docs
